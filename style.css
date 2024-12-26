@@ -1,0 +1,120 @@
+/* Resetting default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  body {
+    background: url('bg3.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Adding transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    
+  }
+  
+  .coming-soon-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+  }
+  
+  .time {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+
+/* Tablet and Small Screen Adjustments */
+@media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .coming-soon-heading {
+      font-size: 2.5rem; /* Slightly smaller heading */
+    }
+  
+    .countdown {
+      gap: 10px; /* Reduce the gap between boxes */
+    }
+  
+    .box {
+      width: 80px; /* Adjust the size of countdown boxes */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .time {
+      font-size: 1.8rem; /* Slightly smaller time display */
+    }
+  
+    span {
+      font-size: 0.9rem; /* Reduce label size */
+    }
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 480px) {
+    .container {
+      width: 90%; /* Make the container fit smaller screens */
+    }
+  
+    .coming-soon-heading {
+      font-size: 2rem; /* Further reduce heading size */
+    }
+  
+    .countdown {
+      flex-wrap: wrap; /* Allow boxes to wrap onto multiple lines */
+      gap: 8px; /* Reduce gap further */
+    }
+  
+    .box {
+      width: 70px; /* Smaller box width */
+      padding: 10px; /* Minimal padding */
+    }
+  
+    .time {
+      font-size: 1.5rem; /* Smaller time text */
+    }
+  
+    span {
+      font-size: 0.8rem; /* Smaller label size */
+    }
+  }
+  
